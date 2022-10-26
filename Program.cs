@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Babina_OOP.classes;
+Animal Babbi=new Animal();
+
