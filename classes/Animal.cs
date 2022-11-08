@@ -1,14 +1,19 @@
 class Animal
 {
-    string name="";
-    int age=0;
-    
+    public string name="";
+    private int age=0;
+    private string names; // field
+    public string Name   // property
+    {
+     get { return names; }   // get method
+     set { names = value; }  // set method
+    }
 
+  public string SonningKubi { get; set; }
   public void helloName()
   {
     System.Console.Write("As salomu alaykum hurmatli foydalanuvchi\nIsmingizni kiriting:");
-    string? userName=Console.ReadLine();  
-    this.name=userName;
+    this.name=Console.ReadLine();  
   }
   public void ageUser()
   {
@@ -62,22 +67,16 @@ class Animal
     }
   }
 
-public void dostlarr()
-{
-  string[] dostlar={"Nazarbek","Asilbek","Muhammadsodiq", "Komron"};
-  int x=dostlar.Length;
-  System.Console.WriteLine($"Sizning do'stlaringiz soni {x} ta");
-  for (int i = 0; i < x-1; i++)
+  public void dostlarr()
   {
-      System.Console.Write($"{i+1} chi do'stingiz {dostlar[i]},\n");
+    string[] dostlar={"Nazarbek","Asilbek","Muhammadsodiq", "Komron"};
+    int x=dostlar.Length;
+   System.Console.WriteLine($"Sizning do'stlaringiz soni {x} ta");
+   for (int i = 0; i < x-1; i++)
+    {
+       System.Console.Write($"{i+1} chi do'stingiz {dostlar[i]},\n");
+   }
+     System.Console.Write($"{x} chi do'stingiz {dostlar[x-1]}.");
   }
-  System.Console.Write($"{x} chi do'stingiz {dostlar[x-1]}.");
-}
-
-
-
-
-
-
 
 }

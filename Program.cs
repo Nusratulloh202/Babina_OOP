@@ -1,10 +1,9 @@
-﻿Animal salomlash = new Animal();
-salomlash.helloName();
-salomlash.ageUser();
-salomlash.randomTest();
-salomlash.passwordCod();
-salomlash.dostlarr();
-
+﻿Animal babina = new Animal();
+babina.helloName();
+babina.ageUser();
+babina.randomTest();
+babina.passwordCod();
+babina.dostlarr();
 
 
 
